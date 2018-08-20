@@ -5,16 +5,17 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store'
 
-import { 
-    BrowserRouter as Router
-} from 'react-router-dom'
+import './modules/config'
+
+
+import './stylesheets/main.scss'
+
+import Router from './router'
 
 
 ReactDOM.render(
     <Provider store = {store}>
-        <Router>
-            <App />
-        </Router>    
+        <Router />  
     </Provider>
     , document.getElementById('root'));
 
